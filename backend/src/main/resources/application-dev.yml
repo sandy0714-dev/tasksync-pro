@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/tasksync_db
+    username: root
+    password: Placed12345#
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+
+  application:
+    name: TaskSync Pro
+
+server:
+  port: 8080
