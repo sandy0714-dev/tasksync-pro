@@ -1,4 +1,7 @@
 package com.tasksync.common.enums;
 
-public class RoleName {
+public enum RoleName {
+    ADMIN,
+    MANAGER,
+    EMPLOYEE
 }
