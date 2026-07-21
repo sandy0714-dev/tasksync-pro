@@ -1,4 +1,6 @@
 package com.tasksync.auth.mapper;
+import org.mapstruct.Mapper;
 
-public class UserMapper {
+@Mapper(componentModel = "spring")
+public interface UserMapper {
 }
