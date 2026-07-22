@@ -2,6 +2,7 @@ package com.tasksync.auth.mapper;
 
 import com.tasksync.auth.dto.request.RegisterRequest;
 import com.tasksync.auth.dto.response.UserResponse;
+import com.tasksync.auth.entity.Role;
 import com.tasksync.auth.entity.User;
 import org.mapstruct.Mapper;
 
@@ -12,4 +13,7 @@ public interface UserMapper {
 
     UserResponse toResponse(User user);
 
+    default String map(Role role) {
+        return role.getName().name();
+    }
 }
